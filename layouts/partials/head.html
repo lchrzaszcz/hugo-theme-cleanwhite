@@ -45,7 +45,7 @@
     <meta name="keyword"  content="{{ .Site.Params.keyword }}">
     <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}">
 
-    <title>{{ if .Title }}{{ .Title }}-{{ .Site.Params.SEOTitle }}{{ else }}{{ .Site.Params.SEOTitle }}{{ end }}</title>
+    <title>{{ if .Title }}{{ .Title }} - {{ .Site.Params.SEOTitle }}{{ else }}{{ .Site.Params.SEOTitle }}{{ end }}</title>
 
     <link rel="canonical" href="{{ .URL | relURL }}">
 
@@ -59,10 +59,16 @@
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}">
-    
+
     <!-- zangshang CSS -->
     <link rel="stylesheet" href="{{ "css/zanshang.css" | relURL }}">
-    
+
+    <!-- main CSS -->
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+
+    <!-- Cookie notice CSS -->
+    <link rel="stylesheet" href="{{ "css/cookie-notice.css" | relURL }}"/>
+
     <!-- Custom Fonts -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
